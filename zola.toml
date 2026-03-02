@@ -1,18 +1,87 @@
 # The URL the site will be built for
-base_url = "https://seoul.rs"
+title = "Seoul Rust"
+base_url = "https://seoul.rs/"
+#description = "Seoul Rust, seoul.rs"
+
+theme = "zola-bearblog"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-title = "seoul.rs"
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+default_language = "en"
+
+generate_feeds = true
+
+[translations]
+no_posts = "No Post yet"
+remove_filter = "Remove Filter"
+filtering_for = "Filter for"
+made_with = "Made With"
+table_of_contents = "Table of Contents"
+language = "Language"
+site = "Site"
+
+[languages.ko]
+title = "서울 러스트"
+#description = "Ein Zola-theme basiert auf Bear Blog."
+
+taxonomies = [
+  { name = "categories", feed = true },
+  { name = "tags", feed = true },
+]
+
+
+[languages.ko.translations]
+no_posts = "등록된 게시물이 없습니다."
+remove_filter = "Remove Filter"
+filtering_for = "Filter for"
+made_with = "Made With"
+table_of_contents = "목차"
+language = "Language"
+site = "Site"
+
 
 [markdown]
 
-[markdown.highlighting]
-theme = "catppuccin-mocha"
 
 [extra]
-# Put all your custom variables here
+date_format = "%Y-%m-%d"
+webserver_sends_csp_headers = true
+language_switcher = true
+hide_made_with_line = true
+translations = [
+  { code = "en", name = "English" },
+  { code = "ko", name = "Korean" },
+]
+
+
+[extra.table_of_contents]
+show = true
+max_level = 2
+visible_on_load = false
+
+[[extra.main_menu]]
+name = "Home"
+name_ko = "Home"
+url = "@/_index.md"
+
+[[extra.main_menu]]
+name = "News"
+name_ko = "News"
+url = "@/news/_index.md"
+
+[[extra.main_menu]]
+name = "Blog"
+name_ko = "Blog"
+url = "@/blog/_index.md"
+
+[[extra.main_menu]]
+name = "About"
+name_ko = "About"
+url = "@/about.md"
