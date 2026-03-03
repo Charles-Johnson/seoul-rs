@@ -19,8 +19,12 @@
             </i>
           </span>
           <a href="{{ page.permalink }}">{{ page.title }}</a>
-          &nbsp;
-          ({% for author_id in page.authors %}{% set author = config.extra.authors[author_id] %}{{author.name}}{% endfor %})
+          &nbsp;&nbsp;<sub>
+          {% for author_id in page.authors %}
+            {{author_id}}
+          {% endfor %}
+          </sub>
+
         </li>
         {%- else %}
         <li>{{ trans(key="no_posts", lang=lang) }}</li>
