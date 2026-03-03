@@ -15,6 +15,16 @@ github = "jsmith"
 	$ just prebuild
 ```
 
+3. Write your content  
+Make sure you have 'title', 'date' and 'authors' section available.
+```
++++
+title = "Tokio Conf 2026"
+date = "2026-03-02"
+authors = ["seungjin"]
++++
+```
+
 3. Preview with zola
 ```
 	$ zola serve
