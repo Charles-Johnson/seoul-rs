@@ -12,7 +12,6 @@ seoul.rs는 [zola](https://getzola.org)라는 Rust로 작성된 SSG(Static Site 
 
 ```
 +++
-draft = true
 title = "seoul.rs에 글써보기"
 date = "2026-03-04"
 [taxonomies]
@@ -27,3 +26,4 @@ tags = ["howto"]
 글 작성을 마친 후 github.com/seoul-rs/seoul-rs 저장소로 Pull Request를 보내주시면, 리뷰 후 병합(Merge)되며 GitHub Actions를 통해 자동으로 게시됩니다.
 
 Pull Request를 생성할 때에는 본인의 암호화 키로 서명된 커밋만 허용하며, GitHub에 등록된 본인키로 검증(Verified)된 커밋만 병합하고 있습니다. GitHub 계정을 사용하지 않으시는 경우에는, 본인 GPG키로 서명된 패치 파일을 보내주시기 바랍니다.
+
