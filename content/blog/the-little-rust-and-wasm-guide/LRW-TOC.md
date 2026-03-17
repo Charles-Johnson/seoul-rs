@@ -22,9 +22,9 @@ This is a series of blog posts originally written in Korean for [The Little Rust
 4. [The Story of WASI: WASM Beyond the Browser](../lrw-ch2)  
   4.1 Wasmtime  
   4.2 Wasmer  
-  4.3 Spinframework
-  4.4 FaaS(Function as a Service) and WASM
-  4.5 Container and WASM
+  4.3 Spinframework  
+  4.4 FaaS(Function as a Service) and WASM  
+  4.5 Container and WASM  
 
 ---
 [All chapters: seoul.rs/blog/the-little-rust-and-wasm](/blog/the-little-rust-and-wasm-guide)
